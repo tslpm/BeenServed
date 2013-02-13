@@ -46,7 +46,7 @@ Restaurant.create restaurants
   v = Visit.new
   v.user_id = u.id
   v.dish_id = d.id
-  v.restaurant_id = restaurant.id
+  v.restaurant_id = r.id
   v.rating = rand(1..5)
   v.save
  end
