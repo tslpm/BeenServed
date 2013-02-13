@@ -21,15 +21,15 @@
   </div>
   <div class="field">
     <%= f.label :user_id %><br />
-    <%= f.number_field :user_id %>
+    <%= f.collection_select :user_id, User.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :dish_id %><br />
-    <%= f.number_field :dish_id %>
+    <%= f.collection_select :dish_id, Dish.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :restaurant_id %><br />
-    <%= f.number_field :restaurant_id %>
+    <%= f.collection_select :restaurant_id, Restaurant.all, :id, :name %>
   </div>
   <div class="actions">
     <%= f.submit %>
