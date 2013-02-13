@@ -4,4 +4,6 @@ class Visit < ActiveRecord::Base
   belongs_to :user
   belongs_to :restaurant
   belongs_to :dish
+
+  validates_presence_of :user, :restaurant, :dish
 end
